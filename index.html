@@ -11,7 +11,7 @@
 
 <body class="page content">
     <header class="header page__header">
-        <img class="header__logo" src="./images/logo.svg" alt="Логотип">
+        <img class="header__logo" src="./images/logo.svg" alt="Лого">
     </header>
     <main>
         <section class="profile page__profile" aria-label="Профиль">
@@ -34,9 +34,10 @@
     <footer class="footer page__footer">
         <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
+    
 <!-- попап редактирования профиля -->
-    <div class="popup popup__edit-form">
-        <div class="popup__container">
+    <div class="popup">
+        <div class="popup__container popup__edit-form">
             <button type="button" class="button popup__close-btn" aria-label="Закрыть форму"></button>
             <form class="form" name="edit-user">
                 <h3 class="form__title">Редактировать профиль</h3>
@@ -46,9 +47,10 @@
             </form>
         </div>
     </div>
+    
 <!-- кнопка добавления нового фото -->
-    <div class="popup popup__add-photo">
-        <div class="popup__container">
+    <div class="popup">
+        <div class="popup__container popup__add-photo">
             <button type="button" class="button popup__close-btn" aria-label="Закрыть форму"></button>
             <form class="form" name="add-photo">
                 <h3 class="form__title">Новое место</h3>
@@ -58,6 +60,7 @@
             </form>
         </div>
     </div>
+    
 <div class="popup image-popup">
     <div class="popup__container">
         <button type="button" class="button popup__close-btn" aria-label="Закрыть форму"></button>
