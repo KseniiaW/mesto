@@ -1,0 +1,28 @@
+.form__input {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    color: #000;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    height: 27px;
+    height: 27px;
+    line-height: 17px;
+    margin: 30px 22px 0;
+    padding: 0 0 13px 0;
+    width: 238px;
+}
+
+@media screen and (min-width: 1280px) {
+    .form__input {
+        margin-left: 36px;
+        margin-right: 36px;
+        width: 358px;
+    }
+}
+
+.form__input:focus {
+    outline-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .8);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ксения Вебер">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Mesto</title>
+</head>
+
+<body class="page content">
+    <header class="header page__header">
+        <img class="header__logo" src="./images/logo.svg" alt="Логотип">
+    </header>
+    <main>
+        <section class="profile page__profile" aria-label="Профиль">
+            <img class="profile__avatar" src="./images/avatar.jpg" alt="Аватарка">
+            <div class="profile__user-info">
+                <div class="profile__user-wrapper">
+                    <h1 class="profile__user-name">Жак-Ив Кусто</h1>
+                    <button type="button" class="button profile__edit-btn" aria-label="Редактировать профиль"></button>
+                </div>
+                <p class="profile__about-user">Исследователь океана</p>
+            </div>
+
+            <button type="button" class="button profile__add-btn" aria-label="Добавить фотографию"></button>
+        </section>
+        <section class="cards page__cards" aria-label="Лента фотографий">
+        </section>
+
+
+    </main>
+    <footer class="footer page__footer">
+        <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
+    </footer>
+<!-- попап редактирования профиля -->
+    <div class="popup popup__edit-form">
+        <div class="popup__container">
+            <button type="button" class="button popup__close-btn" aria-label="Закрыть форму"></button>
+            <form class="form" name="edit-user">
+                <h3 class="form__title">Редактировать профиль</h3>
+                <input class="form__input" type="text" placeholder="Введите имя пользователя" name="user-name">
+                <input class="form__input" type="text" placeholder="Расскажите о себе" name="about-user">
+                <button class="button form__save-btn" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+<!-- кнопка добавления нового фото -->
+    <div class="popup popup__add-photo">
+        <div class="popup__container">
+            <button type="button" class="button popup__close-btn" aria-label="Закрыть форму"></button>
+            <form class="form" name="add-photo">
+                <h3 class="form__title">Новое место</h3>
+                <input class="form__input" type="text" placeholder="Название" name="photo-title">
+                <input class="form__input" type="text" placeholder="Ссылка на картину" name="photo-url">
+                <button class="button form__save-btn" type="submit">Создать</button>
+            </form>
+        </div>
+    </div>
+<div class="popup image-popup">
+    <div class="popup__container">
+        <button type="button" class="button popup__close-btn" aria-label="Закрыть форму"></button>
+        <div class="image-popup__photo-wrapper">
+            <img class="image-popup__photo" src="./images/dombay.jpg" alt="Просмотрщик фотографии">
+            <p class="image-popup__caption">Домбай</p>
+        </div>
+    </div>
+</div>
+
+<!-- кнопки реакции и удаления добавленного фото -->
+    <template id="card-template">
+        <article class="card">
+            <div class="card__image-wrapper">
+                <button type="button" class="card__trash-btn button" aria-label="Удалить фотографию"></button>
+                <img class="card__image" src="./images/karachaevsk.jpg" alt="Фотография, загруженная пользователем">
+            </div>
+            <div class="card__title-wrapper">
+                <h2 class="card__title">Карачаевск</h2>
+                <button type="button" class="card__reaction-btn button" aria-label="Оценить фотографию"></button>
+            </div>
+        </article>
+    </template>
+
+<!-- подключение js-->
+    <script src="./script.js"></script>
+</body>
+
+</html>

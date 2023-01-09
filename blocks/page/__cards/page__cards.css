@@ -1,0 +1,9 @@
+.page__cards {
+    margin-top: 36px;
+}
+
+@media screen and (min-width: 1280px) {
+    .page__cards {
+        margin-top: 50px;
+    }
+}

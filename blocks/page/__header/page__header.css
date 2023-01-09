@@ -1,0 +1,10 @@
+.page__header {
+    padding-top: 28px;
+}
+
+@media screen and (min-width: 1280px) {
+    .page__header {
+        margin: 0 200px 0;
+        padding-top: 45px;
+    }
+}
